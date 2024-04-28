@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+const handleClick = () => {
+  setIsMenuOpen(!isMenuOpen);
+};
+
+
   return (
     <>
       <section class="flex items-center flex-wrap lg:justify-center gap-4 py-3 sm:px-10 px-4 border-gray-200 border-b min-h-[75px]">
@@ -86,11 +93,16 @@ const Header = () => {
 
           <div
             id="collapseMenu"
-            class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0 max-lg:before:z-50"
+          
+            className={`max-lg:hidden lg:block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0 max-lg:before:z-50 ${
+             isMenuOpen ? "block" : "visible"
+           }`}
+        
           >
             <button
               id="toggleClose"
               class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3"
+              onClick={handleClick}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -680,6 +692,7 @@ const Header = () => {
                 fill="#000"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
+                onClick={handleClick}
               >
                 <path
                   fill-rule="evenodd"
@@ -691,6 +704,7 @@ const Header = () => {
           </div>
         </div>
       </header>
+   
     </>
   );
 };

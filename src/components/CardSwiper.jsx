@@ -11,21 +11,44 @@ import back from "../assets/back.jpg";
 import { Mousewheel, Pagination, Autoplay } from "swiper/modules";
 import styled from "styled-components"
 
+import img from '../assets/jee-adv.png'
+import img2 from '../assets/jee-main.png'
+import img3 from '../assets/medical.png'
+import img4 from '../assets/mex.png'
+import img5 from '../assets/commerce.png'
+import img6 from '../assets/dlpd.png'
+import img7 from '../assets/pspd.png'
+import img8 from '../assets/pccp.png'
+
 // Styled components
 const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 600px;
+  @media (max-width: 768px) {
+    height: auto; /* Change height to auto on smaller screens */
+  }
 `;
 
 const Card = styled.div`
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3); /* Adjust transparency as needed */
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  width: 200px;
+  width: 330px;
+  height:300px;
+  gap:2rem;
+  backdrop-filter: blur(30px); /* Add blur effect */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  @media (max-width: 768px) {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
 `;
 const StyledSwiper = styled.div`
   background: url(${back});
@@ -59,59 +82,76 @@ const CardSwiper = () => {
       <SwiperSlide>
         <CardContainer>
           <Card>
+          <img src={img} alt="" />
             <h2>Card 1</h2>
-            <p>This is the content of card 1.</p>
+
           </Card>
         </CardContainer>
       </SwiperSlide>
       <SwiperSlide>
         <CardContainer>
           <Card>
-            <h2>Card 2</h2>
-            <p>This is the content of card 2.</p>
+          <img src={img2} alt="" />
+            <h2>Card 1</h2>
+
           </Card>
         </CardContainer>
       </SwiperSlide>
       <SwiperSlide>
         <CardContainer>
           <Card>
-            <h2>Card 3</h2>
-            <p>This is the content of card 3.</p>
+          <img src={img3} alt="" />
+            <h2>Card 1</h2>
+
           </Card>
         </CardContainer>
       </SwiperSlide>
       <SwiperSlide>
         <CardContainer>
           <Card>
-            <h2>Card 3</h2>
-            <p>This is the content of card 3.</p>
+          <img src={img4} alt="" />
+            <h2>Card 1</h2>
+
           </Card>
         </CardContainer>
       </SwiperSlide>
       <SwiperSlide>
         <CardContainer>
           <Card>
-            <h2>Card 3</h2>
-            <p>This is the content of card 3.</p>
+          <img src={img5} alt="" />
+            <h2>Card 1</h2>
+
           </Card>
         </CardContainer>
       </SwiperSlide>
       <SwiperSlide>
         <CardContainer>
           <Card>
-            <h2>Card 3</h2>
-            <p>This is the content of card 3.</p>
+          <img src={img6} alt="" />
+            <h2>Card 1</h2>
+
           </Card>
         </CardContainer>
       </SwiperSlide>
       <SwiperSlide>
         <CardContainer>
           <Card>
-            <h2>Card 3</h2>
-            <p>This is the content of card 3.</p>
+          <img src={img7} alt="" />
+            <h2>Card 1</h2>
+
           </Card>
         </CardContainer>
       </SwiperSlide>
+      <SwiperSlide>
+        <CardContainer>
+          <Card>
+          <img src={img8} alt="" />
+            <h2>Card 1</h2>
+            
+          </Card>
+        </CardContainer>
+      </SwiperSlide>
+
     </Swiper>
     </StyledSwiper>
   );
