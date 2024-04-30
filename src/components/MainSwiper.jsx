@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-
 import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
@@ -15,7 +14,7 @@ const MainSwiper = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768); // Example threshold for small screens
+      setIsSmallScreen(window.innerWidth < 425); // Adjusted threshold for small screens
     };
 
     // Add event listener to listen for resize events
@@ -57,33 +56,32 @@ export default MainSwiper;
 
 const SliderContainer = styled.div`
   margin-top: 0px;
+  height: 80vh; /* Adjusted height for Swiper */
 
   .swiper {
     width: 100vw;
-    height: 79vh;
+    height: 100%; /* Fill the container height */
   }
 
   .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%; /* Fill the container height */
   }
 
   .swiper-slide .img {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    ${'' /* object-fit: cover;   */}
   }
 
   .mySwiper {
     width: 100%;
-    height: 79vh;
+    height: 80vh; /* Adjusted height for Swiper */
   }
 
   .swiper-button-prev:after,
@@ -93,7 +91,7 @@ const SliderContainer = styled.div`
   }
 
   .swiper-wrapper {
-    max-height: 79vh;
+    max-height: 80vh; /* Adjusted height for Swiper */
     object-fit: cover;
   }
 

@@ -28,11 +28,11 @@ const handleClick = () => {
         </div>
 
         <a href="javascript:void(0)" class="shrink-0">
-          <img
+          {/* <img
             src="https://readymadeui.com/readymadeui.svg"
             alt="logo"
             class="md:w-[170px] w-36"
-          />
+          /> */}
         </a>
 
         <div class="lg:absolute lg:right-10 flex items-center ml-auto space-x-8">
@@ -92,11 +92,11 @@ const handleClick = () => {
           <a href="javascript:void(0)">Aman Classes</a>
 
           <div
-            id="collapseMenu"
-          
-            className={`max-lg:hidden lg:block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0 max-lg:before:z-50 ${
-             isMenuOpen ? "block" : "visible"
-           }`}
+         
+          id="collapseMenu"
+          style={{ display: isMenuOpen ? "block" : "none" }}
+          className="lg:!flex max-lg:hidden max-lg:w-full lg:space-x-10 max-lg:space-y-3 max-lg:my-4"
+       
         
           >
             <button
