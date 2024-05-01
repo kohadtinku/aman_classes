@@ -19,6 +19,7 @@ import back from "./assets/back2.jpg";
 import EventsSection from "./components/EventSection";
 import Courses from "./components/Courses";
 import NewsAndEvents from "./components/NewsAndEvents";
+import Thirdswiper from "./components/ThirdSwiper";
 
 const App = () => {
   return (
@@ -42,13 +43,14 @@ const App = () => {
 
       {/* <NewsEventSection/> */}
       <div >
-      <h1>Latest News/Events</h1>
+      <h1 className="text-center text-4xl">Latest News/Events</h1>
         {/* <EventsSection /> */}
         {/* <div style={{position:"absolute",top:"325vh"}}> */}
           <NewsComponent />
         {/* </div> */}
       </div>
       <NewsAndEvents/>
+      {/* <Thirdswiper/> */}
       {/* <Swiper2 /> */}
       {/* <Courses/> */}
       <Stats />

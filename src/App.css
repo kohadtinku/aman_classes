@@ -1,13 +1,13 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap");
 
 * {
-	box-sizing: border-box;
-	font-family: "Cinzel", serif;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -16,138 +16,188 @@ h3,
 h4,
 h5,
 p {
-	margin: 0;
+  margin: 0;
 }
 
 main {
-	display: flex;
-	justify-content: center;
-	/* background-color: #d9d9d9; */
+  display: flex;
+  justify-content: center;
 }
 
 .book {
-	--book-height: 100vh;
-	--book-ratio: 1.4;
-	background-image: url('..assets/back2.jpg');
+  --book-height: 100vh;
+  --book-ratio: 1.4;
+  background-image: url("../assets/back2.jpg");
 }
 
 .book > div {
-	height: var(--book-height);
-	width: calc(var(--book-height) / var(--book-ratio));
-	overflow: auto;
-	background-color: #0a0a0a;
-	transform: scale(0.9);
-	border-radius: 6px;
-	transform-origin: left;
+  height: calc(var(--book-height) * 0.8);
+  width: calc(var(--book-height) / var(--book-ratio));
+  overflow: auto;
+  background-color: #0a0a0a;
+  transform: scale(0.9);
+  border-radius: 6px;
+  transform-origin: left;
 }
 
 .book-cover {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	z-index: 9;
-	text-align: center;
-	background: linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
-		linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
-		linear-gradient(315deg, black 25%, transparent 25%),
-		linear-gradient(45deg, black 25%, transparent 25%);
-	background-size: 2em 2em;
-	background-color: #232323;
-	color: white;
-	transition: transform 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  background: linear-gradient(
+      135deg,
+      black 25%,
+      transparent 25%
+    ) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);
+  background-size: 2em 2em;
+  background-color: #232323;
+  color: white;
+  transition: transform 2s;
 }
 
 .book-cover::before {
-	content: "";
-	position: absolute;
-	width: 20px;
-	right: 20px;
-	top: 0;
-	bottom: 0;
-	background-color: #b11509;
+  content: "";
+  position: absolute;
+  width: 20px;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  background-color: #b11509;
 }
 
 h1 {
-	font-family: "Petemoss", cursive;
-	font-size: 98px;
-	font-weight: 300;
-	color: #db765d;
+  font-family: "Petemoss";
+  font-size: 2rem;
+  font-weight: 600;
+  color: #db765d;
 }
 
 h2 {
-	font-size: 16px;
+  font-size: 14px;
 }
 
 .separator {
-	--separator-size: 8px;
-	width: var(--separator-size);
-	height: var(--separator-size);
-	background-color: #dbd75d;
-	margin: 50px auto 60px auto;
-	border-radius: 50%;
-	position: relative;
+  --separator-size: 4px;
+  width: var(--separator-size);
+  height: var(--separator-size);
+  background-color: #dbd75d;
+  margin: 30px auto 40px auto;
+  border-radius: 50%;
+  position: relative;
 }
 
 .separator::after,
 .separator::before {
-	content: "";
-	position: absolute;
-	width: 12px;
-	background-color: white;
-	height: 2px;
-	top: calc(50% - 1px);
+  content: "";
+  position: absolute;
+  width: 8px;
+  background-color: white;
+  height: 1px;
+  top: calc(50% - 1px);
 }
 
 .separator::after {
-	left: 15px;
+  left: 10px;
 }
 
 .separator::before {
-	right: 15px;
+  right: 10px;
 }
 
 .book-content {
-	transform: scale(0.9) translateY(30px);
-	background-color: #e5e5e5 !important;
-	transition: all 0.3s 1s;
-  padding: 10px ;
-  line-height: 28px;
+  transform: scale(0.9) translateY(20px);
+  background-color: #e5e5e5 !important;
+  transition: all 0.3s 1s;
+  padding: 10px;
+  line-height: 30px;
+  font-size: 18px;
 }
 
 .book-content h3,
 .book-content p {
-	opacity: 0;
-	transition: all 0.3s 0.3s;
+  opacity: 0;
+  transition: all 0.3s 0.3s;
 }
 
 h3 {
-	padding: 30px;
+  padding: 20px;
+  font-size: 16px;
 }
 
 p {
-	padding: 0px 30px 10px 30px;
-	text-align: justify;
-	font-size: 14px;
+  padding: 0px 20px 10px 20px;
+  text-align: justify;
+  font-size: 12px;
 }
 
 .book-cover > div {
-	transition: opacity 0s 0.6s;
+  transition: opacity 0s 0.6s;
 }
 
 .book:hover > .book-cover {
-	transform: rotateY(180deg) scale(0.9);
+  transform: rotateY(180deg) scale(0.9);
 }
 
 .book:hover > .book-cover > div {
-	opacity: 0;
+  opacity: 0;
 }
 
 .book:hover > .book-content {
-	transform: scale(0.9) translateY(0px);
+  transform: scale(0.9) translateY(0px);
 }
 
 .book:hover > .book-content h3,
 .book:hover > .book-content p {
-	opacity: 1;
+  opacity: 1;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 12px;
+  }
+
+  .separator {
+    --separator-size: 2px;
+    margin: 20px auto 30px auto;
+  }
+
+  .separator::after,
+  .separator::before {
+    width: 4px;
+    height: 0.5px;
+  }
+
+  .book-content {
+	line-height: 30px;
+	display: flex;
+	justify-content: center;
+	padding: 60px;
+	height: -moz-fit-content;
+	height: fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	text-align: start;
+	margin-left: 82px;
+
+  }
+
+  h3 {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  p {
+    padding: 0px 15px 8px 15px;
+    font-size: 10px;
+  }
 }
