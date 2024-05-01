@@ -184,7 +184,7 @@ p {
     justify-content: start;
     padding: 60px;
     height: fit-content;
-    width: 400px !important;
+    width: 300px !important;
     text-align: start;
     margin-left: 82px;
     align-items: start;
@@ -200,7 +200,7 @@ p {
     justify-self: start;
     justify-content: start;
     height: calc(var(--book-height) * 0.8);
-    width: 400px !important;
+    width: 300px !important;
     overflow: auto;
     background-color: #0a0a0a;
     transform: scale(0.9);
