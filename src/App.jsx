@@ -43,7 +43,7 @@ const App = () => {
 
       {/* <NewsEventSection/> */}
       <div >
-      <h1 className="text-center text-4xl">Latest News/Events</h1>
+      <h1 className="text-center text-4xl">Latest News</h1>
         {/* <EventsSection /> */}
         {/* <div style={{position:"absolute",top:"325vh"}}> */}
           <NewsComponent />

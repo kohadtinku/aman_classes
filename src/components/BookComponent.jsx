@@ -10,7 +10,7 @@ const BookComponent = () => {
           <div>
             <h2>Admission</h2>
             <div className="separator"></div>
-            <h2>By Aman Classes</h2>
+            <h2>By Raman Classes</h2>
           </div>
         </div>
         <div className="book-content">

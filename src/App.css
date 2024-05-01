@@ -200,7 +200,7 @@ p {
     justify-self: start;
     justify-content: start;
     height: calc(var(--book-height) * 0.8);
-    width: 300px !important;
+    width: 400px !important;
     overflow: auto;
     background-color: #0a0a0a;
     transform: scale(0.9);
