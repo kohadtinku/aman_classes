@@ -28,6 +28,7 @@ main {
   --book-height: 100vh;
   --book-ratio: 1;
   background-image: url("../assets/back2.jpg");
+  /* width: 400px; */
 }
 
 .book > div {
@@ -183,12 +184,15 @@ p {
     justify-content: start;
     padding: 60px;
     height: fit-content;
-    width: 300px !important;
+    width: 400px !important;
     text-align: start;
     margin-left: 82px;
     align-items: start;
     margin-right: 40px !important;
     overflow-x: hidden;
+  }
+  .book-cover {
+	width: 500px !important;
   }
   
   .book > div {
