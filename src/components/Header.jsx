@@ -89,7 +89,7 @@ const handleClick = () => {
 
       <header class="flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide relative z-50">
         <div class="w-full flex flex-wrap items-center justify-center gap-6 px-10 py-3 relative">
-          <a href="javascript:void(0)">Aman Classes</a>
+          <a href="javascript:void(0)">Raman Classes</a>
 
           <div
          
