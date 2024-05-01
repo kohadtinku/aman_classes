@@ -117,8 +117,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <p class='text-gray-300 text-sm'>© 2023<a href='https://readymadeui.com/' target='_blank'
-          class="hover:underline mx-1">ReadymadeUI</a>All Rights Reserved.
+        <p class='text-gray-300 text-sm'>2024 | All Copyrights Reserved | Design & Development by Royals WebTech Pvt. Ltd.
         </p>
       </div>
 

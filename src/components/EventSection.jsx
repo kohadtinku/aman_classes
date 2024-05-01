@@ -11,6 +11,8 @@ const EventsSection = () => {
         backgroundPosition: "center",
       }}
     >
+          {/* <h1 className="z-10">Latest News/Events</h1> */}
+
       {/* <div className="leftBox" style={{ width: '50%', height: '100%', float: 'left', padding: '50px', boxSizing: 'border-box' }}>
                     <div className="content" style={{ color: '#fff', background: 'rgba(0, 0, 0, 0.5)', padding: '40px', transition: '.5s' }}>
                         <h1 style={{ margin: '0', padding: '0', fontSize: '50px', textTransform: 'uppercase' }}>

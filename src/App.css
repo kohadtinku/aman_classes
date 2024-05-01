@@ -28,6 +28,7 @@ main {
 .book {
 	--book-height: 100vh;
 	--book-ratio: 1.4;
+	background-image: url('..assets/back2.jpg');
 }
 
 .book > div {
