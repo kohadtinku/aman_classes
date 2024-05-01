@@ -26,13 +26,13 @@ main {
 
 .book {
   --book-height: 100vh;
-  --book-ratio: 1.4;
+  --book-ratio: 1;
   background-image: url("../assets/back2.jpg");
 }
 
 .book > div {
   height: calc(var(--book-height) * 0.8);
-  width: calc(var(--book-height) / var(--book-ratio));
+  width: calc(var(--book-height));
   overflow: auto;
   background-color: #0a0a0a;
   transform: scale(0.9);
@@ -178,17 +178,31 @@ p {
   }
 
   .book-content {
-	line-height: 30px;
-	display: flex;
-	justify-content: center;
-	padding: 60px;
-	height: -moz-fit-content;
-	height: fit-content;
-	width: -moz-fit-content;
-	width: fit-content;
-	text-align: start;
-	margin-left: 82px;
-
+    line-height: 30px;
+    display: flex;
+    justify-content: start;
+    padding: 60px;
+    height: fit-content;
+    width: 300px !important;
+    text-align: start;
+    margin-left: 82px;
+    align-items: start;
+    margin-right: 40px !important;
+    overflow-x: hidden;
+  }
+  
+  .book > div {
+    display: flex;
+    justify-self: start;
+    justify-content: start;
+    height: calc(var(--book-height) * 0.8);
+    width: 300px !important;
+    overflow: auto;
+    background-color: #0a0a0a;
+    transform: scale(0.9);
+    border-radius: 6px;
+    transform-origin: left;
+    overflow-x: hidden;
   }
 
   h3 {

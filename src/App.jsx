@@ -32,8 +32,8 @@ const App = () => {
         className="flex justify-center flex-wrap mt-10 font-serif "
         style={{ background: `url${back}` }}
       >
-        <div className="flex justify-center flex-col items-center" style={{ background: `url${back}` }}>
-          <h1 className="text-center text-3xl top-5 hover:underline transition duration-300 ease-in-out transform hover:text-red-600">
+        <div className="" style={{ background: `url${back}` }}>
+          <h1 className="text-center text-3xl top-5 hover:underline transition duration-300 ease-in-out transform hover:text-red-600" style={{width:"fit-content"}}>
             Admission
           </h1>
 
