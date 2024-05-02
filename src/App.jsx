@@ -34,7 +34,7 @@ const App = () => {
         style={{ background: `url${back}` }}
       >
         <div className="" style={{ background: `url${back}` }}>
-          <h1 className="text-center text-3xl top-5 hover:underline transition duration-300 ease-in-out transform hover:text-red-600">
+          <h1 className="text-center text-6xl top-5 hover:underline transition duration-300 ease-in-out transform hover:text-red-600">
             Admission
           </h1>
 
@@ -44,7 +44,7 @@ const App = () => {
 
       {/* <NewsEventSection/> */}
       <div >
-      <h1 className="text-center text-4xl">Latest News</h1>
+      <h1 className="text-center text-6xl">Latest News</h1>
         {/* <EventsSection /> */}
         {/* <div style={{position:"absolute",top:"325vh"}}> */}
           <NewsComponent />
