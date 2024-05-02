@@ -33,7 +33,7 @@ const handleClick = () => {
           >
             <button
               id="toggleClose"
-              class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3"
+              class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3 mr-6"
               onClick={handleClick}
               style={{display:isMenuOpen?"block":"none"}}
             >
