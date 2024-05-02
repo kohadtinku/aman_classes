@@ -4,7 +4,7 @@ import admission from "../data/admission";
 
 const BookComponent = () => {
   return (
-    <main>
+    <main className="main">
       <div className="book">
         <div className="book-cover">
           <div>

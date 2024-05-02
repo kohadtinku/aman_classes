@@ -163,6 +163,13 @@ p {
 }
 
 @media (max-width: 425px) {
+  .main{
+    width: 300px !important;
+  }
+  .book{
+    margin-right: 1000px !important;
+    width: 300px;
+  }
   h1 {
     font-size: 32px;
   }
@@ -204,7 +211,7 @@ p {
     justify-self: start;
     justify-content: start;
     height: calc(var(--book-height) * 0.8);
-    /* width: 300px !important; */
+    width: 300px !important;
     overflow: auto;
     background-color: #0a0a0a;
     transform: scale(0.9);
