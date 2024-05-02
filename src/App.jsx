@@ -20,6 +20,7 @@ import EventsSection from "./components/EventSection";
 import Courses from "./components/Courses";
 import NewsAndEvents from "./components/NewsAndEvents";
 import Thirdswiper from "./components/ThirdSwiper";
+// import BlogSlider from "./components/BlogSlider";
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
         {/* </div> */}
       </div>
       <NewsAndEvents/>
+      {/* <BlogSlider/> */}
       {/* <Thirdswiper/> */}
       {/* <Swiper2 /> */}
       {/* <Courses/> */}

@@ -23,7 +23,7 @@ const NewsComponent = () => {
 };
 
 const Card = styled.div`
-  background: black;
+  background: hsl(38.9deg 100% 82.16%);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 51px;
@@ -34,8 +34,8 @@ const Card = styled.div`
   transition: all 0.3s ease;
   width: fit-content;
   line-height: 30px;
-  color:white;
-
+  color:black;
+font-weight:700;
   /* Optional: Add transition for smoother hover effect */
   transition: all 0.3s ease;
   &:hover {
