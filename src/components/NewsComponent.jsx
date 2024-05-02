@@ -10,7 +10,7 @@ const NewsComponent = () => {
         <marquee width="70%" direction="up" height="350px">
           <div>
             {latestNews.map((item, index) => (
-              <div key={index}>
+              <div key={index} className="underline">
                 <h2>{item}</h2>
                 {/* Assuming `isNew` and `subItems` are not part of `latestNews` */}
               </div>
@@ -41,6 +41,7 @@ font-weight:700;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 20px 0 rgba(31, 38, 135, 0.37);
+    text-decoration:underline;
   }
 `;
 
