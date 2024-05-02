@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import newsImage1 from "../assets/e1.jpg";
 import newsImage2 from "../assets/e2.jpg";
 import newsImage3 from "../assets/e3.jpg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const NewsAndEvents = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+  
+    });
+  })
   const newsAndEvents = [
     {
       title: "Student Programme",
@@ -28,7 +35,7 @@ const NewsAndEvents = () => {
   const firstSection = newsAndEvents.slice(0, 5);
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10" data-aos="fade-down">
       <h1 className="text-4xl font-bold mb-5 text-center">Classes Events</h1>
 
       <div className="flex flex-wrap gap-6 mb-8 justify-center">

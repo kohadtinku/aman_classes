@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,7 +13,8 @@ import img5 from "../assets/commerce.png";
 import img6 from "../assets/dlpd.png";
 import img7 from "../assets/pspd.png";
 import img4 from "../assets/pccp.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 // Styled components
 const CardContainer = styled.div`
   display: flex;
@@ -66,8 +67,14 @@ const StyledSwiper = styled.div`
 
 // Card swiper component
 const CardSwiper = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+  
+    });
+  })
   return (
-    <StyledSwiper>
+    <StyledSwiper data-aos="zoom-in">
       <div>
         <h1
           className="text-center"

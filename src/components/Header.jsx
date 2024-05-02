@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from '../assets/logo1.png'
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -7,12 +9,18 @@ const handleClick = () => {
   setIsMenuOpen(!isMenuOpen);
 };
 
+useEffect(() => {
+  AOS.init({
+    duration: 2000,
+
+  });
+})
 
   return (
     <>
      
 
-      <header class="flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide relative z-50" style={{position:"fixed",width:"100%",top:"0",boxShadow:"2px 2px 4px rgba(0, 0, 0.4, 0.3)"}}>
+      <header data-aos="fade-in" class="flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide relative z-50" style={{position:"fixed",width:"100%",top:"0",boxShadow:"2px 2px 4px rgba(0, 0, 0.4, 0.3)"}}>
 
         <div class="w-full flex flex-wrap items-center justify-center gap-6 px-10 py-3 relative">
         <a href="javascript:void(0)">
@@ -644,5 +652,6 @@ const handleClick = () => {
     </>
   );
 };
+
 
 export default Header;

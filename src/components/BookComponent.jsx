@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css"; // Import the CSS file
 import admission from "../data/admission";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const BookComponent = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+  
+    });
+  })
   return (
-    <main className="main">
+    <main className="main" data-aos="zoom-in">
       <div className="book">
         <div className="book-cover">
           <div>

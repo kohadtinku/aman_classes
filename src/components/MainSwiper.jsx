@@ -113,6 +113,8 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MainSwiper = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -128,8 +130,14 @@ const MainSwiper = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 650,
+  
+    });
+  })
   return (
-    <SliderContainer>
+    <SliderContainer data-aos="zoom-in">
       <Swiper
         cssMode={false}
         navigation={true}

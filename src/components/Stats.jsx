@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Stats = () => {
   const [uptime, setUptime] = useState(0);
 
@@ -10,9 +11,15 @@ const Stats = () => {
 
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+  
+    });
+  })
   return (
     <>
-      <div class="bg-gray-800 px-6 py-20 font-[sans-serif] text-white">
+      <div class="bg-gray-800 px-6 py-20 font-[sans-serif] text-white" data-aos="fade-right">
       <h2 className="text-center text-4xl font-sans">OUR STATS</h2>
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-x-6 gap-y-10 max-w-6xl mx-auto">
           <div class="flex items-center gap-6">

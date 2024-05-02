@@ -24,6 +24,7 @@ import Book from "./components/Book";
 // import BlogSlider from "./components/BlogSlider";
 
 const App = () => {
+  
   return (
     <>
       <Header />
