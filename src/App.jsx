@@ -1,70 +1,22 @@
 import React from "react";
-import Header from "./components/Header";
-
-// import Carousel1 from "./components/MainSwiper";
-import MainSwiper from "./components/MainSwiper";
-import GlassCard from "./components/GlassCard";
-import NewsComponent from "./components/NewsComponent";
-import Swiper2 from "./components/Swiper2";
-import Stats from "./components/Stats";
-import ParallaxSection from "./components/ParallaxSection";
-import Footer from "./components/Footer";
-// import NewCard from "./components/NewCard";
-import Division from "./components/Divison";
-import CardSwiper from "./components/CardSwiper";
-import CardComponent from "./components/CardComponent";
-import BookComponent from "./components/BookComponent";
-import BookContent from "./components/BookConent";
-import back from "./assets/back2.jpg";
-import EventsSection from "./components/EventSection";
-import Courses from "./components/Courses";
-import NewsAndEvents from "./components/NewsAndEvents";
-import Thirdswiper from "./components/ThirdSwiper";
-// import Book from "./components/Book";
+import Home from './components/Home'
+import Login from './pages/Login'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MultiStepForm from "./pages/MultiStepForm";
-// import BlogSlider from "./components/BlogSlider";
+
 
 const App = () => {
+
   return (
     <>
-      <Header />
-      <MainSwiper />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<MultiStepForm />} />
 
-      <CardSwiper />
-      <div
-        className="flex justify-center flex-wrap mt-10 font-serif "
-        style={{ background: `url${back}` }}
-      >
-        <div className="" style={{ background: `url${back}` }}>
-          <h1 className="text-center text-6xl top-5 hover:underline transition duration-300 ease-in-out transform hover:text-red-600">
-            Admission
-          </h1>
 
-          <BookComponent />
-
-        </div>
-      </div>
-
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h1 className="text-center text-6xl">Latest News</h1>
-        {/* <EventsSection /> */}
-        {/* <div style={{position:"absolute",top:"325vh"}}> */}
-        <NewsComponent />
-        {/* </div> */}
-      </div>
-      <NewsAndEvents />
-
-      <Stats />
-
-      <Footer />
-      {/* <MultiStepForm/> */}
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };

@@ -3,6 +3,7 @@ import logo from '../assets/logo1.png'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import '../App.css'
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
@@ -99,7 +100,7 @@ useEffect(() => {
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
+                        <a 
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
@@ -107,12 +108,12 @@ useEffect(() => {
                         </a>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
+                        <Link to={'/login'}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Login
-                        </a>
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
