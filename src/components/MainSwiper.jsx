@@ -8,27 +8,30 @@
 // import img1 from "../assets/img1.jpg";
 // import img2 from "../assets/img2.png";
 // import img3 from "../assets/img3.png";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 // const MainSwiper = () => {
 //   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
 //   useEffect(() => {
 //     const handleResize = () => {
-//       setIsSmallScreen(window.innerWidth < 425); // Adjusted threshold for small screens
+//       setIsSmallScreen(window.innerWidth < 425);
 //     };
 
-//     // Add event listener to listen for resize events
 //     window.addEventListener("resize", handleResize);
-
-//     // Initial check on component mount
 //     handleResize();
 
-//     // Clean up event listener on component unmount
 //     return () => window.removeEventListener("resize", handleResize);
 //   }, []);
 
+//   useEffect(() => {
+//     AOS.init({
+//       duration: 1000,  
+//     });
+//   })
 //   return (
-//     <SliderContainer>
+//     <SliderContainer data-aos="zoom-in">
 //       <Swiper
 //         cssMode={false}
 //         navigation={true}
@@ -56,11 +59,11 @@
 
 // const SliderContainer = styled.div`
 //   margin-top: 114px;
-//   height: 80vh; /* Adjusted height for Swiper */
+//   height: 60vh; /* Adjusted height for smaller screens */
 
 //   .swiper {
 //     width: 100vw;
-//     height: 100%; /* Fill the container height */
+//     height: 100%;
 //   }
 
 //   .swiper-slide {
@@ -70,7 +73,7 @@
 //     display: flex;
 //     justify-content: center;
 //     align-items: center;
-//     height: 100%; /* Fill the container height */
+//     height: 100%;
 //   }
 
 //   .swiper-slide .img {
@@ -81,7 +84,7 @@
 
 //   .mySwiper {
 //     width: 100%;
-//     height: 80vh; /* Adjusted height for Swiper */
+//     height: 60vh; /* Adjusted height for smaller screens */
 //   }
 
 //   .swiper-button-prev:after,
@@ -91,7 +94,7 @@
 //   }
 
 //   .swiper-wrapper {
-//     max-height: 80vh; /* Adjusted height for Swiper */
+//     max-height: 60vh; /* Adjusted height for smaller screens */
 //     object-fit: cover;
 //   }
 
@@ -100,6 +103,7 @@
 //     font: 20px;
 //   }
 // `;
+
 
 
 
@@ -132,12 +136,12 @@ const MainSwiper = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 650,
-  
+      duration: 1000,
     });
-  })
+  });
+
   return (
-    <SliderContainer data-aos="zoom-in">
+    <SliderContainer data-aos="zoom-in" className="custom_swiper" style={{height:"fit-content"}}>
       <Swiper
         cssMode={false}
         navigation={true}
@@ -148,13 +152,13 @@ const MainSwiper = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className="img" src={isSmallScreen ? img1 : img1} alt="" />
+          <img className="img" src={img1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="img" src={isSmallScreen ? img3 : img3} alt="" />
+          <img className="img" src={img2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="img" src={isSmallScreen ? img2 : img2} alt="" />
+          <img className="img" src={img3} alt="" />
         </SwiperSlide>
       </Swiper>
     </SliderContainer>
@@ -165,10 +169,10 @@ export default MainSwiper;
 
 const SliderContainer = styled.div`
   margin-top: 114px;
-  height: 60vh; /* Adjusted height for smaller screens */
+  height: 60vh;
 
   .swiper {
-    width: 100vw;
+    width: 100%;
     height: 100%;
   }
 
@@ -207,5 +211,15 @@ const SliderContainer = styled.div`
   .swiper-pagination-bullet {
     background-color: white;
     font: 20px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .mySwiper {
+      height: 40vh; /* Adjusted height for smaller screens */
+    }
+    .custom_swiper{
+      height:"fit-content" ;
+    }
+
   }
 `;

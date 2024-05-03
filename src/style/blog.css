@@ -1,29 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #ffe53b;
-  background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
-  min-height: 100vh;
-  font-family: 'Fira Sans', sans-serif;
-  display: flex;
-} */
-
-/* .blog-slider {
-  width: 95%;
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-  background: #fff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 25px;
-  border-radius: 25px;
-  height: 400px;
-  transition: all 0.3s;
-} */
+/* 
 
 @media screen and (max-width: 992px) {
   .blog-slider {
@@ -212,4 +187,4 @@ body {
     height: 11px;
     width: 30px;
   }
-}
+} */

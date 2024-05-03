@@ -231,3 +231,12 @@ p {
     font-size: 10px;
   }
 }
+
+
+@media (max-width: 425px) {
+  .custom_ul{
+    height: 800px !important;
+    width: 100% !important;
+    z-index: 999;
+  }
+}

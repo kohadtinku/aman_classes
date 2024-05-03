@@ -20,16 +20,16 @@ import EventsSection from "./components/EventSection";
 import Courses from "./components/Courses";
 import NewsAndEvents from "./components/NewsAndEvents";
 import Thirdswiper from "./components/ThirdSwiper";
-import Book from "./components/Book";
+// import Book from "./components/Book";
+import MultiStepForm from "./pages/MultiStepForm";
 // import BlogSlider from "./components/BlogSlider";
 
 const App = () => {
-  
   return (
     <>
       <Header />
       <MainSwiper />
-      
+
       <CardSwiper />
       <div
         className="flex justify-center flex-wrap mt-10 font-serif "
@@ -41,28 +41,30 @@ const App = () => {
           </h1>
 
           <BookComponent />
-          {/* <Book/> */}
+
         </div>
       </div>
 
-      {/* <NewsEventSection/> */}
-      <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
-      <h1 className="text-center text-6xl">Latest News</h1>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <h1 className="text-center text-6xl">Latest News</h1>
         {/* <EventsSection /> */}
         {/* <div style={{position:"absolute",top:"325vh"}}> */}
-          <NewsComponent />
+        <NewsComponent />
         {/* </div> */}
       </div>
-      <NewsAndEvents/>
-      {/* <BlogSlider/> */}
-      {/* <Thirdswiper/> */}
-      {/* <Swiper2 /> */}
-      {/* <Courses/> */}
+      <NewsAndEvents />
+
       <Stats />
 
-      {/* <BookContent /> */}
       <Footer />
-     
+      {/* <MultiStepForm/> */}
     </>
   );
 };
