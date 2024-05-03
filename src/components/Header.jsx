@@ -25,13 +25,13 @@ useEffect(() => {
       <header data-aos="fade-in" className="flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide relative z-50" style={{position:"fixed",width:"100%",top:"0",boxShadow:"2px 2px 4px rgba(0, 0, 0.4, 0.3)"}}>
 
         <div className="w-full flex flex-wrap items-center justify-center gap-6 px-10 py-3 relative">
-        <a href="javascript:void(0)">
+        <Link to={"/"}>
                   <img
                     src={logo}
                     alt="logo"
                     className="w-36"
                   />
-                </a>
+                </Link>
 
           <div
          
@@ -100,12 +100,12 @@ useEffect(() => {
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <a 
+                        <Link to={'/apply'}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Apply Online
-                        </a>
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <Link to={'/login'}

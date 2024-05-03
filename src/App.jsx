@@ -12,7 +12,8 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<MultiStepForm />} />
+          <Route path="/apply" element={<MultiStepForm />} />
+          <Route path="/login" element={<Login />} />
 
 
         </Routes>

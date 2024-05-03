@@ -104,16 +104,11 @@
 //   }
 // `;
 
-
-
-
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "styled-components";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
@@ -145,10 +140,9 @@ const MainSwiper = () => {
       <Swiper
         cssMode={false}
         navigation={true}
-        pagination={true}
-        autoplay={true}
+        autoplay={{ delay: 3000 }} // Adjust delay as per your requirement
         loop={true}
-        modules={[Autoplay, Navigation, Pagination]}
+        modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -208,11 +202,6 @@ const SliderContainer = styled.div`
     object-fit: cover;
   }
 
-  .swiper-pagination-bullet {
-    background-color: white;
-    font: 20px;
-  }
-
   @media screen and (max-width: 425px) {
     .mySwiper {
       height: 40vh; /* Adjusted height for smaller screens */
@@ -220,6 +209,5 @@ const SliderContainer = styled.div`
     .custom_swiper{
       height:"fit-content" ;
     }
-
   }
 `;

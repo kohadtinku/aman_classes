@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../style/form.css";
+import Header from "../components/Header";
 
 const MultiStepForm = () => {
   const [formData, setFormData] = useState({
@@ -37,7 +38,9 @@ const MultiStepForm = () => {
   };
 
   return (
-    <div className="form-container">
+    <>
+<Header/>
+    <div className="form-container mt-52" >
       <form onSubmit={handleSubmit}>
         {currentStep === 1 && (
           <div className="form-step">
@@ -123,6 +126,7 @@ const MultiStepForm = () => {
         )}
       </form>
     </div>
+    </>
   );
 };
 
