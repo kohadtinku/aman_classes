@@ -30,8 +30,8 @@ const Home = () => {
         <NewsComponent />
       </div>
 
-      <NewsAndEvents />
       <Stats />
+      <NewsAndEvents />
       <Footer />
     </>
   );

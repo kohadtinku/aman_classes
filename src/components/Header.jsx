@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from '../assets/logo1.png'
+import logo from '../assets/raman1.png'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import '../App.css'
@@ -177,20 +177,20 @@ useEffect(() => {
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
+                        <Link to={'/apply'}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Apply online
-                        </a>
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
+                        <Link to={'/fee-structure'}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Fee Structure
-                        </a>
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a

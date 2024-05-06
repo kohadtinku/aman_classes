@@ -7,7 +7,7 @@ const admission = [
       "description": "Target - JEE (Main+Advanced) | JEE (Main) | NEET | Pre-Foundation"
     },
     {
-      "title": "Aman CLasses Special Scholarship Schemes for Academic session 2024-25",
+      "title": "Aman Classes Special Scholarship Schemes for Academic session 2024-25",
       "isNew": true
     },
     {
@@ -15,7 +15,7 @@ const admission = [
       "description": "Target - JEE (Main+Advanced) | JEE Main | NEET | Pre-Foundation"
     },
     {
-      "title": "ResoNET 2024-25",
+      "title": "Raman Classes 2024-25",
       "subItems": [
         "Fee Deposition Bank Challan",
         "Admit Card",

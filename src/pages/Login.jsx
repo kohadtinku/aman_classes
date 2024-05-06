@@ -1,23 +1,26 @@
 import React from 'react'
-import logo from '../assets/logo1.png'
+import logo from '../assets/raman1.png'
 import Header from '../components/Header'
 import { Link } from 'react-router-dom'
+import Footer from '../components/Footer'
 const Login = () => {
   return (
 <>
 
 <Header/>
+<div>
+
 <section class=" dark:bg-gray-900 mt-32">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-          <img class="w-20 h-20 mr-2" src={logo}alt="logo"/>
+          <img class="w-32 h-20 mr-2" src={logo}alt="logo"/>
        RAMAN CLASSES   
       </a>
       <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
           <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+              <h2 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Sign in to your account
-              </h1>
+              </h2>
               <form class="space-y-4 md:space-y-6" action="#">
                   <div>
                       <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
@@ -47,6 +50,8 @@ const Login = () => {
       </div>
   </div>
 </section>
+</div>
+<Footer/>
 </>
   )
 }
