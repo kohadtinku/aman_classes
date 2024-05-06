@@ -7,7 +7,7 @@ const admission = [
       "description": "Target - JEE (Main+Advanced) | JEE (Main) | NEET | Pre-Foundation"
     },
     {
-      "title": "Resonance Announces Special Scholarship Schemes for Academic session 2024-25",
+      "title": "Aman CLasses Special Scholarship Schemes for Academic session 2024-25",
       "isNew": true
     },
     {
