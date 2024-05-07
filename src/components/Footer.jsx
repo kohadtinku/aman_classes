@@ -11,7 +11,7 @@ const Footer = () => {
   })
   return (
 <>
-<footer class="bg-[#0b0e37] font-sans relative overflow-hidden" data-aos="fade-down">
+<footer class="bg-[#0b0e37] font-sans relative overflow-hidden" >
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12 gap-8 py-14 px-12 relative z-20">
         <div>
           <h2 class="text-lg text-gray-300 font-semibold mb-6">Company</h2>

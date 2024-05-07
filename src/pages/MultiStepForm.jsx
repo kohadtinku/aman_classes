@@ -40,7 +40,7 @@ const MultiStepForm = () => {
                   <input type="text" placeholder="Lastname" className="border border-gray-400 py-1 px-2" required />
                 </div>
                 <div className="mt-5">
-  <input type="email" placeholder="email" className="border border-gray-400 py-1 px-2 w-full" required />
+  <input type="email" name="email" placeholder="email" className="border border-gray-400 py-1 px-2 w-full" required />
 </div>
 
                 <div className="mt-5">
