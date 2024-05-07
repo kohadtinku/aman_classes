@@ -27,7 +27,7 @@ const MultiStepForm = () => {
               <h1 className="text-white text-3xl mb-3">Welcome</h1>
               <div>
                 <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suspendisse aliquam varius rutrum purus maecenas ac{" "}
+              Learner, welcome to Raman Classes, your one-stop destination for top-quality education to help you excel in your JEE and NEET exams. Explore our range of products designed specifically to aid you in your journey towards success.
                   <a href="#" className="text-purple-500 font-semibold">Learn more</a>
                 </p>
               </div>
@@ -64,8 +64,8 @@ const MultiStepForm = () => {
                   </select>
                 </div>
                 <div className="mt-5">
-                  <input type="checkbox" className="border border-gray-400" required />
-                  <span>
+                  <input type="checkbox" className="border border-gray-400" required /> 
+                  <span > &nbsp;
                     I accept the{" "}
                     <a href="#" className="text-purple-500 font-semibold">Terms of Use</a>{" "}
                     &{" "}

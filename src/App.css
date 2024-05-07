@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap"); */
 
 * {
   box-sizing: border-box;
@@ -76,7 +76,7 @@ main {
 }
 
 h1 {
-  font-family: "Petemoss";
+  font-family: "fantasy";
   font-size: 2rem;
   font-weight: 600;
   color: #db765d;
