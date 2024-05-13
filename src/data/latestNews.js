@@ -1,6 +1,6 @@
 // data1.js
 const latestNews = [
-    "Download Free Sample/Mock/Rajasthan Talent Search Examination (RTSE) Test Paper/Hostel List in Kota (Near to Resonance Campus)",
+    "Download Free Sample/Mock/Rajasthan Talent Search Examination (RTSE) Test Paper/Hostel List in Kota ",
     "Live Classes",
     "Manthan for RMO",
     "INDIA’S BEST ENGINEERING COLLEGES : As per NIRF's Ranking of last 7 Years.",

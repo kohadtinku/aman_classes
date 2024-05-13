@@ -2,8 +2,10 @@ import React from 'react'
 import logo from '../assets/raman1.png'
 import back from '../assets/contactback.jpg'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Contact = () => {
+
   return (
    <>
    <Header/>
@@ -145,6 +147,7 @@ const Contact = () => {
         </div>
       </div>
     </footer>
+    <Footer/>
    </>
   )
 }
