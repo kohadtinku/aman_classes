@@ -1,9 +1,14 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Rest of your CSS */
 
 * {
   box-sizing: border-box;
-  font-family: "Cinzel", serif;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font family to all elements */
 }
+
+/* Rest of your CSS */
+
 
 body {
   margin: 0;
@@ -120,7 +125,8 @@ h2 {
   transition: all 0.3s 1s;
   padding: 10px;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 15px;
+  font-family: "Popins";
 
 }
 

@@ -589,20 +589,20 @@ useEffect(() => {
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
+                        <Link to={'/contact'}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           CONTACT US
-                        </a>
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <a
+                        <Link to={'/admission-enquiry'}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           ADMISSION ENQUIRY
-                        </a>
+                        </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
                         <a
