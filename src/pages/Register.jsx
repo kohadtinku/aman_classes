@@ -61,14 +61,15 @@
 // export default Register
 
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../assets/raman1.png';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import img from '../assets/1.jpg';
 import axios from 'axios';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Register = () => {
   const [formData, setFormData] = useState({
     email: '',
@@ -107,11 +108,18 @@ const Register = () => {
     }
   };
 
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  });
+
   return (
     <>
       <Header />
-      <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', minHeight: '110vh' }}>
-        <section className="dark:bg-gray-900 mt-28">
+      <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', minHeight: '110vh' }} >
+        <section className="dark:bg-gray-900 mt-28" data-aos="fade-down">
           <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <a href="#" className="flex items-center  mt-6 text-2xl font-semibold text-white dark:text-white">
               <img className="w-32 h-20 mr-2" src={logo} alt="logo" />

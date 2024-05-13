@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import back2 from "../assets/stud.jpg";
 import Footer from "../components/Footer";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const MultiStepForm = () => {
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  });
+
   // State for dropdown selection
   const [selectedCourse, setSelectedCourse] = useState("");
   const [selectedCenter, setSelectedCenter] = useState("");
@@ -20,19 +29,19 @@ const MultiStepForm = () => {
   return (
     <>
       <Header />
-      <div
+      <div 
         className="form-container min-h-screen py-40"
         style={{ backgroundImage: "linear-gradient(115deg, #9F7AEA, #FEE2FE)" }}
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto" data-aos="zoom-in">
           <div className="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
             <div
               className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center"
               style={{ backgroundImage: `url(${back2})`, objectFit: "cover" }}
             >
-              <h1 className="text-white text-3xl mb-3">Welcome</h1>
+              <h1 className="text-white text-3xl mb-3" data-aos="fade-right">Welcome</h1>
               <div>
-                <p className="text-white">
+                <p className="text-white" data-aos="fade-left">
                   Learner, welcome to Raman Classes, your one-stop destination
                   for top-quality education to help you excel in your JEE and
                   NEET exams. Explore our range of products designed

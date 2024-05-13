@@ -49,6 +49,8 @@ const Card = styled.div`
 
   &:hover {
     transform: scale(1.07);
+    background: linear-gradient(to right, #ff7eb3, purple);
+
   }
   @media (max-width: 768px) {
     height: 350px; /* Change height to auto on smaller screens */

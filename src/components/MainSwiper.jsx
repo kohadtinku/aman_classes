@@ -136,7 +136,7 @@ const MainSwiper = () => {
   });
 
   return (
-    <SliderContainer data-aos="zoom-in" className="custom_swiper" style={{height:"fit-content"}}>
+    <SliderContainer data-aos="fade-down" className="custom_swiper" style={{height:"fit-content"}}>
       <Swiper
         cssMode={false}
         navigation={true}

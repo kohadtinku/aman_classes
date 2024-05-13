@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import img from "../assets/jee-adv.png";
 import img2 from "../assets/jee-main.png";
@@ -10,15 +10,22 @@ import img6 from "../assets/dlpd.png";
 import img7 from "../assets/pspd.png";
 import Stats from "../components/Stats";
 import Footer from "../components/Footer";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Table = () => {
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  });
   return (
     <>
       <Header />
       <h2 className="text-center mt-36 text-3xl text-orange-400">
         Fees Structure
       </h2>
-      <div class="overflow-x-auto py-8 ">
+      <div class="overflow-x-auto py-8 " data-aos="zoom-in">
         <table class="min-w-full bg-white font-[sans-serif]">
           <thead class="whitespace-nowrap bg-gray-100 rounded">
             <tr>
