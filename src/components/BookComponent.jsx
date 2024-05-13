@@ -27,7 +27,7 @@ const BookComponent = () => {
           <div >
             {admission.map((item, index) => (
               <div key={index}>
-                <h1 style={{fontSize:"29px"}}>{item.title}</h1>
+                <h1 style={{fontSize:"20px"}}>{item.title}</h1>
                 {item.description && <p>{item.description}</p>}
                 {item.isNew && <span>NEW</span>}
                 {item.subItems && (
