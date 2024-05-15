@@ -12,6 +12,7 @@ import Stats from "../components/Stats";
 import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 const Table = () => {
   
   useEffect(() => {
@@ -63,7 +64,7 @@ const Table = () => {
               <td class="px-6 py-3 text-sm">1 Year</td>
               <td class="px-6 py-3 text-sm">84000</td>
               <td class="px-6 py-3 text-sm">106000</td>
-              <td class="px-6 py-3 text-sm">Apply here</td>
+              <td class="px-6 py-3 text-sm"><Link to={'/apply'}>Apply Here</Link></td>
             </tr>
             {/* second */}
             <tr class="hover:bg-gray-50">
@@ -79,7 +80,7 @@ const Table = () => {
               <td class="px-6 py-3 text-sm">1 Year</td>
               <td class="px-6 py-3 text-sm">67000</td>
               <td class="px-6 py-3 text-sm">102000</td>
-              <td class="px-6 py-3 text-sm">Apply here</td>
+              <td class="px-6 py-3 text-sm"><Link to={'/apply'}>Apply Here</Link></td>
             </tr>
             {/* third */}
             <tr class="hover:bg-gray-50">
@@ -95,7 +96,7 @@ const Table = () => {
               <td class="px-6 py-3 text-sm">1 Year</td>
               <td class="px-6 py-3 text-sm">84000</td>
               <td class="px-6 py-3 text-sm">115000</td>
-              <td class="px-6 py-3 text-sm">Apply here</td>
+              <td class="px-6 py-3 text-sm"><Link to={'/apply'}>Apply Here</Link></td>
             </tr>
             {/* fourth */}
             <tr class="hover:bg-gray-50">
@@ -111,7 +112,7 @@ const Table = () => {
               <td class="px-6 py-3 text-sm">2 Year</td>
               <td class="px-6 py-3 text-sm">8000</td>
               <td class="px-6 py-3 text-sm">68000</td>
-              <td class="px-6 py-3 text-sm">Apply here</td>
+              <td class="px-6 py-3 text-sm"><Link to={'/apply'}>Apply Here</Link></td>
             </tr>
             {/* five */}
             <tr class="hover:bg-gray-50">
@@ -127,7 +128,7 @@ const Table = () => {
               <td class="px-6 py-3 text-sm">1 Year</td>
               <td class="px-6 py-3 text-sm">8000</td>
               <td class="px-6 py-3 text-sm">70000</td>
-              <td class="px-6 py-3 text-sm">Apply here</td>
+              <td class="px-6 py-3 text-sm"><Link to={'/apply'}>Apply Here</Link></td>
             </tr>
             {/* six */}
             <tr class="hover:bg-gray-50">
@@ -143,7 +144,7 @@ const Table = () => {
               <td class="px-6 py-3 text-sm">1 Year</td>
               <td class="px-6 py-3 text-sm">80000</td>
               <td class="px-6 py-3 text-sm">120000</td>
-              <td class="px-6 py-3 text-sm">Apply here</td>
+              <td class="px-6 py-3 text-sm"><Link to={'/apply'}>Apply Here</Link></td>
             </tr>
         
 

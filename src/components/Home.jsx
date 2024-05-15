@@ -8,10 +8,12 @@ import NewsAndEvents from './NewsAndEvents';
 import Stats from './Stats';
 import Footer from './Footer';
 import back from '../assets/contactback.jpg';
+import TopBar from './TopBar';
 
 const Home = () => {
   return (
     <>
+    {/* <TopBar/> */}
       <Header />
       <MainSwiper />
       <CardSwiper />
