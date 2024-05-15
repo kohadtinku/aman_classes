@@ -21,14 +21,14 @@ const Header = () => {
   return (
     <>
       <div className="custom_head">
-        <TopBar />
+        {/* <TopBar /> */}
         <header
           data-aos="fade-in"
           className="flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide relative z-50"
           style={{
             position: "fixed",
             width: "100%",
-            top: "30px",
+            top: "0",
             boxShadow: "2px 2px 4px rgba(0, 0, 0.4, 0.3)",
           }}
         >
@@ -631,7 +631,7 @@ const Header = () => {
                 {/* ========== */}
                 <div
                   className="btn"
-                  style={{ border: "1px solid", borderRadius: "5px" }}
+                  style={{ border: "1px solid gray", borderRadius: "8px" }}
                 >
                   <Link to={"/login"}>
                     <button style={{ padding: "5px", background: "#ff893b" }}>
