@@ -1,57 +1,55 @@
 import React, { useEffect, useState } from "react";
-import logo from '../assets/raman1.png'
+import logo from "../assets/raman1.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import '../App.css'
+import "../App.css";
 import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
 
-const handleClick = () => {
-  setIsMenuOpen(!isMenuOpen);
-};
+  const handleClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-useEffect(() => {
-  AOS.init({
-    duration: 2000,
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
   });
-})
 
   return (
     <>
-     
-
-      <header data-aos="fade-in" className="flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide relative z-50" style={{position:"fixed",width:"100%",top:"0",boxShadow:"2px 2px 4px rgba(0, 0, 0.4, 0.3)"}}>
-
+      <header
+        data-aos="fade-in"
+        className="flex border-b border-1 bg-white font-sans min-h-[70px] tracking-wide relative z-50"
+        style={{
+          position: "fixed",
+          width: "100%",
+          top: "0",
+          boxShadow: "2px 2px 4px rgba(0, 0, 0.4, 0.3)",
+        }}
+      >
         <div className="w-full flex flex-wrap items-center justify-center gap-6 px-10 py-3 relative">
-        <Link to={"/"}>
-                  <img
-                    src={logo}
-                    alt="logo"
-                    className="w-36"
-                  />
-                </Link>
+          <Link to={"/"}>
+            <img src={logo} alt="logo" className="w-36" />
+          </Link>
 
           <div
-         
-          id="collapseMenu"
-          style={{ display: isMenuOpen ? "block" : "none" }}
-          className="lg:!flex max-lg:hidden max-lg:w-full lg:space-x-10 max-lg:space-y-3 max-lg:my-4"
-       
-        
+            id="collapseMenu"
+            style={{ display: isMenuOpen ? "block" : "none" }}
+            className="lg:!flex max-lg:hidden max-lg:w-full lg:space-x-10 max-lg:space-y-3 max-lg:my-4"
           >
             <button
               id="toggleClose"
               className="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3 mr-6"
               onClick={handleClick}
-              style={{display:isMenuOpen?"block":"none"}}
+              style={{ display: isMenuOpen ? "block" : "none" }}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 fill-black"
                 viewBox="0 0 320.591 320.591"
-                style={{marginTop:"40px"}}
+                style={{ marginTop: "40px" }}
               >
                 <path
                   d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
@@ -64,14 +62,10 @@ useEffect(() => {
               </svg>
             </button>
 
-            <ul className="lg:flex lg:ml-10 lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50 custom_ul">
+            <ul className="lg:flex lg:ml-10 lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50 custom_ul justify-center">
               <li className="max-lg:border-b max-lg:pb-4 px-3 lg:hidden">
                 <a href="javascript:void(0)">
-                  <img
-                    src={logo}
-                    alt="logo"
-                    className="w-36"
-                  />
+                  <img src={logo} alt="logo" className="w-36" />
                 </a>
               </li>
 
@@ -100,7 +94,8 @@ useEffect(() => {
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <Link to={'/apply'}
+                        <Link
+                          to={"/apply"}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
@@ -108,7 +103,8 @@ useEffect(() => {
                         </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <Link to={'/login'}
+                        <Link
+                          to={"/login"}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
@@ -177,7 +173,8 @@ useEffect(() => {
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <Link to={'/apply'}
+                        <Link
+                          to={"/apply"}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
@@ -185,7 +182,8 @@ useEffect(() => {
                         </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <Link to={'/fee-structure'}
+                        <Link
+                          to={"/fee-structure"}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
@@ -589,7 +587,8 @@ useEffect(() => {
                   <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li className="max-lg:border-b py-1 rounded">
-                        <Link to={'/contact'}
+                        <Link
+                          to={"/contact"}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
@@ -597,7 +596,8 @@ useEffect(() => {
                         </Link>
                       </li>
                       <li className="max-lg:border-b py-1 rounded">
-                        <Link to={'/admission-enquiry'}
+                        <Link
+                          to={"/admission-enquiry"}
                           href="javascript:void(0)"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
@@ -626,6 +626,16 @@ useEffect(() => {
               </li>
 
               {/* ========== */}
+              <div
+                className="btn"
+                style={{ border: "1px solid", borderRadius: "5px" }}
+              >
+                <Link to={"/login"}>
+                  <button style={{ padding: "5px", background: "#ff893b" }}>
+                    Login
+                  </button>
+                </Link>
+              </div>
             </ul>
           </div>
 
@@ -637,8 +647,7 @@ useEffect(() => {
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
                 onClick={handleClick}
-                style={{display:!isMenuOpen?"block":"none"}}
-
+                style={{ display: !isMenuOpen ? "block" : "none" }}
               >
                 <path
                   fill-rule="evenodd"
@@ -650,10 +659,8 @@ useEffect(() => {
           </div>
         </div>
       </header>
-   
     </>
   );
 };
-
 
 export default Header;

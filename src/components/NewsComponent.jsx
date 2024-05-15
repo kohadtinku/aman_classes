@@ -3,29 +3,31 @@ import styled from "styled-components";
 import latestNews from "../data/latestNews";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Background from "./Background";
 const NewsComponent = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-  
     });
-  })
+  });
   return (
-   
-    <div data-aos="zoom-in">
+    <>
+      <div data-aos="zoom-in">
         <Card>
-        <marquee width="70%" direction="up" height="350px">
-          <div>
-            {latestNews.map((item, index) => (
-              <div key={index} className="underline">
-                <h2>{item}</h2>
-                {/* Assuming `isNew` and `subItems` are not part of `latestNews` */}
-              </div>
-            ))}
-          </div>
-      </marquee>
+              {/* <Background /> */}
+          <marquee width="70%" direction="up" height="350px">
+            <div>
+              {latestNews.map((item, index) => (
+                <div key={index} className="underline">
+                  <h2>{item}</h2>
+                  {/* Assuming `isNew` and `subItems` are not part of `latestNews` */}
+                </div>
+              ))}
+            </div>
+          </marquee>
         </Card>
-    </div>
+      </div>
+    </>
   );
 };
 
@@ -41,14 +43,14 @@ const Card = styled.div`
   transition: all 0.3s ease;
   width: fit-content;
   line-height: 40px;
-  color:black;
-font-weight:700;
+  color: black;
+  font-weight: 700;
   /* Optional: Add transition for smoother hover effect */
   transition: all 0.3s ease;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 20px 0 rgba(31, 38, 135, 0.37);
-    text-decoration:underline;
+    text-decoration: underline;
   }
 `;
 
