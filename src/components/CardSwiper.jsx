@@ -76,8 +76,8 @@ const CardSwiper = () => {
     });
   })
   return (
-    <StyledSwiper data-aos="zoom-in">
-      <div>
+    <StyledSwiper >
+      <div data-aos="zoom-in">
         <h1
           className="text-center"
           style={{
@@ -106,6 +106,7 @@ const CardSwiper = () => {
           425: { slidesPerView: 1 }, // One slide per view for max width 425px
           768: { slidesPerView: 3 }, // Three slides per view for max width 768px
         }}
+        data-aos="zoom-in"
       >
         <SwiperSlide>
           <CardContainer>

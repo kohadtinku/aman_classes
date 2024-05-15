@@ -44,7 +44,7 @@ const admission = [
     description: "Target - JEE (Main+Advanced) | JEE (Main) | NEET | Pre-Foundation"
   },
   {
-    title: "Aman Classes Special Scholarship Schemes for Academic session 2024-25",
+    title: "Raman Classes Special Scholarship Schemes for Academic session 2024-25",
     isNew: true
   },
   {
