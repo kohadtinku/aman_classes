@@ -631,7 +631,7 @@ const Header = () => {
                 {/* ========== */}
                 <div
                   className="btn"
-                  style={{ border: "1px solid gray", borderRadius: "8px" }}
+                  style={{ border: "1px solid gray", borderRadius: "8px" ,width:"fit-content"}}
                 >
                   <Link to={"/login"}>
                     <button style={{ padding: "5px", background: "#ff893b" }}>
