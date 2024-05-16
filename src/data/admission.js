@@ -61,7 +61,6 @@ const admission = [
       "Batch Allotment",
       "Application Form Status",
       "Test Reappearing",
-      "Test Registration (RESONite)"
     ]
   }
 ];

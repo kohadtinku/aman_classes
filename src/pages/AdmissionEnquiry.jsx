@@ -289,6 +289,9 @@ const AdmissionEnquiry = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Perform form submission logic here
+
+
+    
     console.log(formData); // For example, you can log the form data
   };
 

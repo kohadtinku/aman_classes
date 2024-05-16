@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Table from "./pages/Table";
 import Contact from "./pages/Contact";
 import AdmissionEnquiry from "./pages/AdmissionEnquiry";
+import About from "./pages/About";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/about" element={<About/>} />
           <Route path="/apply" element={<MultiStepForm />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

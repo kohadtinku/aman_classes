@@ -86,7 +86,7 @@ const CardSwiper = () => {
             transform: "translateX(-50%)",
             position: "relative",
             fontSize: "25px",
-            fontFamily:"cursive"
+            fontFamily:"serif"
           }}
         >
         
