@@ -98,7 +98,7 @@ const Card = styled.div`
   margin: 26px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: fit-content;
+  width: 600px;
   color: black;
   font-weight: 700;
   line-height: 20px;
@@ -109,6 +109,10 @@ const Card = styled.div`
     box-shadow: 0 4px 20px 0 rgba(31, 38, 135, 0.37);
     text-decoration: underline;
   }
+  @media (max-width: 425px) {
+  width:350px;
+  height:350px
+  }
 `;
 
 const NewsTicker = styled.div`
@@ -118,6 +122,10 @@ const NewsTicker = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  @media (max-width: 425px) {
+  ${'' /* width:250px; */}
+  height:250px
+  }
 `;
 
 const TickerContent = styled.div`
@@ -138,6 +146,8 @@ const TickerContent = styled.div`
 const NewsItem = styled.div`
   padding: 10px 0;
   white-space: nowrap;
+  text-wrap:wrap;
+  ${'' /* height:250px; */}
 `;
 
 export default NewsComponent;

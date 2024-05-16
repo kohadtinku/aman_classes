@@ -53,6 +53,7 @@ return (
     <>
 <Header/>
     <div className="about-us mt-28">
+<h1 style={{fontSize:"20px"}}>About Classes</h1>
       <div className="section">
         <div className="image">
           <img src={teamImage} alt="Our Mission" />
