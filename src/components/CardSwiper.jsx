@@ -15,6 +15,7 @@ import img7 from "../assets/pspd.png";
 import img4 from "../assets/pccp.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 // Styled components
 const CardContainer = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ const CardContainer = styled.div`
   height: 600px;
   @media (max-width: 768px) {
     height: auto; /* Change height to auto on smaller screens */
-    margin-top:60px
+    margin-top: 60px;
   }
 `;
 
@@ -50,11 +51,10 @@ const Card = styled.div`
   &:hover {
     transform: scale(1.07);
     background: linear-gradient(to right, #ff7eb3, purple);
-
   }
   @media (max-width: 768px) {
     height: 350px; /* Change height to auto on smaller screens */
-    width:250px;
+    width: 250px;
   }
 `;
 
@@ -72,11 +72,10 @@ const CardSwiper = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-  
     });
-  })
+  });
   return (
-    <StyledSwiper >
+    <StyledSwiper>
       <div data-aos="zoom-in">
         <h1
           className="text-center"
@@ -86,10 +85,9 @@ const CardSwiper = () => {
             transform: "translateX(-50%)",
             position: "relative",
             fontSize: "25px",
-            fontFamily:"serif"
+            fontFamily: "serif",
           }}
         >
-        
           COURSES OFFERED
         </h1>
       </div>
@@ -113,17 +111,35 @@ const CardSwiper = () => {
             <Card>
               <img src={img} alt="" />
               <h2>JEE (ADVANCED)</h2>
-              <button style={{border:"1px solid black",color:"red",padding:"5px"}}>Know More</button>
+              <button
+                style={{
+                  border: "1px solid black",
+                  color: "red",
+                  padding: "5px",
+                }}
+              >
+                Know More
+              </button>
             </Card>
           </CardContainer>
         </SwiperSlide>
         <SwiperSlide>
           <CardContainer>
-            <Card>
-              <img src={img2} alt="" />
-              <h2>JEE (MAIN)</h2>
-              <button style={{border:"1px solid black",color:"red",padding:"5px"}}>Know More</button>
-            </Card>
+            <Link to={"/jee-main"}>
+              <Card>
+                <img src={img2} alt="" />
+                <h2>JEE (MAIN)</h2>
+                <button
+                  style={{
+                    border: "1px solid black",
+                    color: "red",
+                    padding: "5px",
+                  }}
+                >
+                  Know More
+                </button>
+              </Card>
+            </Link>
           </CardContainer>
         </SwiperSlide>
         <SwiperSlide>
@@ -131,7 +147,15 @@ const CardSwiper = () => {
             <Card>
               <img src={img3} alt="" />
               <h2>MEDICAL</h2>
-              <button style={{border:"1px solid black",color:"red",padding:"5px"}}>Know More</button>
+              <button
+                style={{
+                  border: "1px solid black",
+                  color: "red",
+                  padding: "5px",
+                }}
+              >
+                Know More
+              </button>
             </Card>
           </CardContainer>
         </SwiperSlide>
@@ -140,7 +164,15 @@ const CardSwiper = () => {
             <Card>
               <img src={img4} alt="" />
               <h2>PCCP</h2>
-              <button style={{border:"1px solid black",color:"red",padding:"5px"}}>Know More</button>
+              <button
+                style={{
+                  border: "1px solid black",
+                  color: "red",
+                  padding: "5px",
+                }}
+              >
+                Know More
+              </button>
             </Card>
           </CardContainer>
         </SwiperSlide>
@@ -149,7 +181,15 @@ const CardSwiper = () => {
             <Card>
               <img src={img5} alt="" />
               <h2>COMMERCE</h2>
-              <button style={{border:"1px solid black",color:"red",padding:"5px"}}>Know More</button>
+              <button
+                style={{
+                  border: "1px solid black",
+                  color: "red",
+                  padding: "5px",
+                }}
+              >
+                Know More
+              </button>
             </Card>
           </CardContainer>
         </SwiperSlide>
@@ -158,7 +198,15 @@ const CardSwiper = () => {
             <Card>
               <img src={img6} alt="" />
               <h2>DLPD</h2>
-              <button style={{border:"1px solid black",color:"red",padding:"5px"}}>Know More</button>
+              <button
+                style={{
+                  border: "1px solid black",
+                  color: "red",
+                  padding: "5px",
+                }}
+              >
+                Know More
+              </button>
             </Card>
           </CardContainer>
         </SwiperSlide>
@@ -167,7 +215,15 @@ const CardSwiper = () => {
             <Card>
               <img src={img7} alt="" />
               <h2>PSPD</h2>
-              <button style={{border:"1px solid black",color:"red",padding:"5px"}}>Know More</button>
+              <button
+                style={{
+                  border: "1px solid black",
+                  color: "red",
+                  padding: "5px",
+                }}
+              >
+                Know More
+              </button>
             </Card>
           </CardContainer>
         </SwiperSlide>
@@ -176,7 +232,15 @@ const CardSwiper = () => {
             <Card>
               <img src={img8} alt="" />
               <h2>MEX</h2>
-              <button style={{border:"1px solid black",color:"red",padding:"5px"}}>Know More</button>
+              <button
+                style={{
+                  border: "1px solid black",
+                  color: "red",
+                  padding: "5px",
+                }}
+              >
+                Know More
+              </button>
             </Card>
           </CardContainer>
         </SwiperSlide>

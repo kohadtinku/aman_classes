@@ -131,7 +131,7 @@ const NewsTicker = styled.div`
 const TickerContent = styled.div`
   display: flex;
   flex-direction: column;
-  animation: scrollUp 30s linear infinite;
+  animation: scrollUp 15s linear infinite;
 
   @keyframes scrollUp {
     0% {

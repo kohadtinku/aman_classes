@@ -162,7 +162,7 @@ const MainSwiper = () => {
 export default MainSwiper;
 
 const SliderContainer = styled.div`
-  margin-top: 140px;
+  margin-top: 100px;
   height: 60vh;
 
   .swiper {

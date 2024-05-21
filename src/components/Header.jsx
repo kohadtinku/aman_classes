@@ -30,9 +30,10 @@ const Header = () => {
             width: "100%",
             top: "0",
             boxShadow: "2px 2px 4px rgba(0, 0, 0.4, 0.3)",
+            background:"#ffd24b"
           }}
         >
-          <div className="w-full flex flex-wrap items-center justify-center gap-6 px-10 py-3 relative">
+          <div className="w-full flex flex-wrap items-center justify-center gap-6 px-10  relative">
             <Link to={"/"}>
               <img src={logo} alt="logo" className="w-36" />
             </Link>
