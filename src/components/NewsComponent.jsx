@@ -153,10 +153,6 @@
 
 
 
-
-
-
-
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import latestNews from "../data/latestNews";
@@ -174,19 +170,19 @@ const NewsComponent = () => {
     <Container data-aos="zoom-in">
       <Card>
         <Table>
-        <NewsTicker>
-        <TickerContent>
-          <tbody>
-            {latestNews.map((item, index) => (
-              <TableRow key={index}>
-                <TableCell>{item}</TableCell>
-                <TableCell>
-                  <Button href="#">Click Here</Button>
-                </TableCell>
-              </TableRow>
-            ))}
-          </tbody>
-          </TickerContent>
+          <NewsTicker>
+            <TickerContent>
+              <tbody>
+                {latestNews.map((item, index) => (
+                  <TableRow key={index}>
+                    <TableCell>{item}</TableCell>
+                    <TableCell>
+                      <Button href="#">Click Here</Button>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </tbody>
+            </TickerContent>
           </NewsTicker>
         </Table>
       </Card>
@@ -221,6 +217,7 @@ const Card = styled.div`
 
   @media (max-width: 425px) {
     width: 350px;
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 `;
 
@@ -272,17 +269,17 @@ const TickerContent = styled.div`
   }
 `;
 
- const NewsTicker = styled.div`
-   width: 100%;
-   height: 350px;
-   overflow: hidden;
-   display: flex;
-   align-items: center;
-   position: relative;
-   @media (max-width: 425px) {
-   ${'' /* width:250px; */}
-   height:250px
-   }
- `;
+const NewsTicker = styled.div`
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 425px) {
+    height: 250px; /* Decrease height for smaller screens */
+  }
+`;
 
 export default NewsComponent;

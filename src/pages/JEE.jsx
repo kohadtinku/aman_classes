@@ -16,6 +16,16 @@ const JEE = () => {
     "Scholarship programs",
     "Global exposure"
   ];
+  const Benefits = [
+  "Excellent Faculty",
+  "Computer Based Tests",
+  "Doubt Classes",
+  "Board Exam Preparation",
+  "Daily Practice Problems",
+  "Periodic Tests",
+  "Orientation Classes",
+  "Study Material"
+  ];
 
   return (
     <>
@@ -81,7 +91,7 @@ const JEE = () => {
       </div>
 
       <div className="jee-card-container">
-        {courseBenefits.map((benefit, index) => (
+        {courseBenefits?.map((benefit, index) => (
           <div className="jee-card" key={index}>
             <img src={jeeImage} alt="" />
             <h4>Benefit {index + 1}</h4>
