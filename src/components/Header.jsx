@@ -669,3 +669,145 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import { FaBars, FaTimes, FaCaretDown } from 'react-icons/fa';
+
+// const Header = () => {
+//   const [menuOpen, setMenuOpen] = useState(false);
+//   const [subMenuOpen, setSubMenuOpen] = useState({});
+
+//   const toggleMenu = () => {
+//     setMenuOpen(!menuOpen);
+//   };
+
+//   const toggleSubMenu = (index) => {
+//     setSubMenuOpen((prev) => ({
+//       ...prev,
+//       [index]: !prev[index],
+//     }));
+//   };
+
+//   return (
+//     <header className="w-full absolute top-0 left-0">
+//       <div className="container mx-auto p-4 flex justify-between items-center bg-black bg-opacity-50">
+//         <div className="text-3xl text-white font-kanit">CODEBRO</div>
+//         <div className="flex items-center space-x-4">
+//           <div className="text-white text-2xl cursor-pointer lg:hidden" onClick={toggleMenu}>
+//             {menuOpen ? <FaTimes /> : <FaBars />}
+//           </div>
+//           <nav className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 lg:bg-transparent lg:relative lg:flex lg:items-center lg:justify-between ${menuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row`}>
+//             <ul className="lg:flex lg:items-center lg:space-x-6 text-white lg:text-sm lg:mt-0 mt-24">
+//               <li>
+//                 <a href="#" className="block p-4 lg:inline-block lg:p-0">Home</a>
+//               </li>
+//               <li className="relative group">
+//                 <a href="#" className="block p-4 lg:inline-block lg:p-0" onClick={() => toggleSubMenu(1)}>
+//                   Menu <FaCaretDown className="inline-block ml-1" />
+//                 </a>
+//                 <ul className={`absolute lg:group-hover:block lg:top-full lg:left-0 bg-black bg-opacity-50 lg:bg-opacity-100 lg:w-48 ${subMenuOpen[1] ? 'block' : 'hidden'} lg:invisible lg:group-hover:visible`}>
+//                   <li>
+//                     <a href="#" className="block p-4 hover:bg-gray-700">Navel</a>
+//                   </li>
+//                   <li className="relative group">
+//                     <a href="#" className="block p-4 hover:bg-gray-700" onClick={() => toggleSubMenu(2)}>
+//                       Mandarine <FaCaretDown className="inline-block ml-1" />
+//                     </a>
+//                     <ul className={`absolute lg:group-hover:block lg:top-0 lg:left-full bg-black bg-opacity-50 lg:bg-opacity-100 lg:w-48 ${subMenuOpen[2] ? 'block' : 'hidden'} lg:invisible lg:group-hover:visible`}>
+//                       <li>
+//                         <a href="#" className="block p-4 hover:bg-gray-700">Cara Cara</a>
+//                       </li>
+//                       <li>
+//                         <a href="#" className="block p-4 hover:bg-gray-700">Tangerine</a>
+//                       </li>
+//                       <li className="relative group">
+//                         <a href="#" className="block p-4 hover:bg-gray-700" onClick={() => toggleSubMenu(3)}>
+//                           Others <FaCaretDown className="inline-block ml-1" />
+//                         </a>
+//                         <ul className={`absolute lg:group-hover:block lg:top-0 lg:left-full bg-black bg-opacity-50 lg:bg-opacity-100 lg:w-48 ${subMenuOpen[3] ? 'block' : 'hidden'} lg:invisible lg:group-hover:visible`}>
+//                           <li>
+//                             <a href="#" className="block p-4 hover:bg-gray-700">Lima</a>
+//                           </li>
+//                           <li>
+//                             <a href="#" className="block p-4 hover:bg-gray-700">Seville</a>
+//                           </li>
+//                           <li>
+//                             <a href="#" className="block p-4 hover:bg-gray-700">Lime</a>
+//                           </li>
+//                         </ul>
+//                       </li>
+//                     </ul>
+//                   </li>
+//                   <li>
+//                     <a href="#" className="block p-4 hover:bg-gray-700">Tangelos</a>
+//                   </li>
+//                 </ul>
+//               </li>
+//               <li>
+//                 <a href="#" className="block p-4 lg:inline-block lg:p-0">Our Services</a>
+//               </li>
+//               <li className="relative group">
+//                 <a href="#" className="block p-4 lg:inline-block lg:p-0" onClick={() => toggleSubMenu(4)}>
+//                   Gallery <FaCaretDown className="inline-block ml-1" />
+//                 </a>
+//                 <ul className={`absolute lg:group-hover:block lg:top-full lg:left-0 bg-black bg-opacity-50 lg:bg-opacity-100 lg:w-48 ${subMenuOpen[4] ? 'block' : 'hidden'} lg:invisible lg:group-hover:visible`}>
+//                   <li>
+//                     <a href="#" className="block p-4 hover:bg-gray-700">Yellow Oranges</a>
+//                   </li>
+//                   <li className="relative group">
+//                     <a href="#" className="block p-4 hover:bg-gray-700" onClick={() => toggleSubMenu(5)}>
+//                       Green Oranges <FaCaretDown className="inline-block ml-1" />
+//                     </a>
+//                     <ul className={`absolute lg:group-hover:block lg:top-0 lg:left-full bg-black bg-opacity-50 lg:bg-opacity-100 lg:w-48 ${subMenuOpen[5] ? 'block' : 'hidden'} lg:invisible lg:group-hover:visible`}>
+//                       <li>
+//                         <a href="#" className="block p-4 hover:bg-gray-700">For Health</a>
+//                       </li>
+//                       <li>
+//                         <a href="#" className="block p-4 hover:bg-gray-700">Sweet Oranges</a>
+//                       </li>
+//                       <li>
+//                         <a href="#" className="block p-4 hover:bg-gray-700">Bitter Oranges</a>
+//                       </li>
+//                     </ul>
+//                   </li>
+//                   <li>
+//                     <a href="#" className="block p-4 hover:bg-gray-700">Dinner</a>
+//                   </li>
+//                 </ul>
+//               </li>
+//               <li>
+//                 <a href="#" className="block p-4 lg:inline-block lg:p-0">Blog</a>
+//               </li>
+//               <li>
+//                 <a href="#" className="block p-4 lg:inline-block lg:p-0">Contact</a>
+//               </li>
+//               <li className="mt-4 lg:mt-0">
+//                 <a href="#" className="block p-4 lg:inline-block lg:p-0 border-2 border-orange-500 rounded hover:bg-orange-500 transition-colors">Best Pricing</a>
+//               </li>
+//             </ul>
+//           </nav>
+//         </div>
+//       </div>
+//     </header>
+//   );
+// };
+
+// export default Header;

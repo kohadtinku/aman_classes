@@ -144,19 +144,21 @@ const CardSwiper = () => {
         </SwiperSlide>
         <SwiperSlide>
           <CardContainer>
-            <Card>
-              <img src={img3} alt="" />
-              <h2>MEDICAL</h2>
-              <button
-                style={{
-                  border: "1px solid black",
-                  color: "red",
-                  padding: "5px",
-                }}
-              >
-                Know More
-              </button>
-            </Card>
+            <Link to={"/medical"}>
+              <Card>
+                <img src={img3} alt="" />
+                <h2>MEDICAL</h2>
+                <button
+                  style={{
+                    border: "1px solid black",
+                    color: "red",
+                    padding: "5px",
+                  }}
+                >
+                  Know More
+                </button>
+              </Card>
+            </Link>
           </CardContainer>
         </SwiperSlide>
         <SwiperSlide>

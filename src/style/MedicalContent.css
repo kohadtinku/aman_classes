@@ -1,0 +1,85 @@
+/* MedicalContent.css */
+.medical-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .medical-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  
+  .medical-content {
+    max-width: 800px;
+    margin-bottom: 24px;
+  }
+  
+  .medical-table-container {
+    max-width: 800px;
+    margin-bottom: 24px;
+  }
+  
+  .medical-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .medical-table th,
+  .medical-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .medical-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .medical-apply-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .medical-apply-button:hover {
+    background-color: #45a049;
+  }
+  
+  .medical-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  
+  .medical-card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .medical-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .medical-card h4 {
+    margin-bottom: 10px;
+  }
+  
+  .medical-card p {
+    color: #666;
+  }
+  

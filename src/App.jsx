@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import AdmissionEnquiry from "./pages/AdmissionEnquiry";
 import About from "./pages/About";
 import JEE from "./pages/JEE";
+import Medical from "./pages/Medical";
 
 
 const App = () => {
@@ -18,7 +19,6 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/contact" element={<Contact/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/apply" element={<MultiStepForm />} />
@@ -27,6 +27,7 @@ const App = () => {
           <Route path="/fee-structure" element={<Table />} />
           <Route path="/admission-enquiry" element={<AdmissionEnquiry />} />
           <Route path="/jee-main" element={<JEE />} />
+          <Route path="/medical" element={<Medical />} />
         </Routes>
       </BrowserRouter>
     </>
